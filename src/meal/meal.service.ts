@@ -16,6 +16,7 @@ export class MealService {
     try {
       return await this.mealRepository.save(createMeal);
     } catch (e) {
+      console.log(e);
       return e;
     }
   }
